@@ -1,0 +1,223 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
+*/
+body {
+    margin: 0;
+}
+
+.hero-bg {
+    background: url(images/taxi_cab_pic.jpg);
+    /*background-repeat: no-repeat;
+    background-attachment: fixed;*/
+    background-size: cover;
+    color: rgb(165, 165, 165);
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+header {
+    padding: 1em 0;
+}
+
+.hero-bg a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+section {
+    margin: 0 1em;
+}
+
+h1 {
+    font-size: 1.7rem;
+    margin: 2em 0 1.2em;
+}
+
+h1 span {
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
+}
+
+h1 span::before {
+    content: ' ';
+    position: absolute;
+    width: 7em;
+    background: #00BFFF;
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+}
+
+.form-container {
+    background-color: white;
+    margin: 2em -1em 0;
+    padding: 4em;
+}
+  
+
+label {
+    color: #2D7D98;
+    font-weight: bold;
+    display: block;
+    font-size: 1.2em;
+}
+
+input[type=text] {
+    border: 1px solid #707070;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: .5em;
+    margin-top: 1.2em;
+    margin-bottom: 1.3em ;
+}
+
+input[type=date]{
+    border: 1px solid #707070;
+    width: 50%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: .5em;
+    margin-top: 1.2em;
+    margin-bottom: 1.3em ;
+    cursor: pointer;
+}
+
+input[type=time]{
+    border: 1px solid #707070;
+    width: 25%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: .5em;
+    margin-top: 1.2em;
+    margin-bottom: 1.3em ;
+    cursor: pointer;
+}
+select {
+    border: 1px solid #707070;
+    width: 50%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: .5em;
+    margin-top: 1.2em;
+    margin-bottom: 1.3em ;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    background-color: #F89104;
+    border: none;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 1em 0;
+    border-radius: 2.5em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(216, 126, 1);
+}
+
+  
+@media (min-width: 720px) {
+
+    section {
+        margin: 0 4em;
+    }
+    .form-container {
+        margin: 2em -4em 0;
+    }
+
+}
+
+@media (min-width: 930px) {
+
+    .hero-bg a {
+         font-size: 2.4rem;
+    }
+        
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    h1 span {
+        font-size: 1.6rem;
+    }
+    .hero-bg {
+        text-align: left;
+    }
+
+    .hero-bg section {
+        width: 65%;
+    }
+
+    .form-container {
+        margin: 2em 0 0;
+        padding: 2em;
+        border-radius: 2.5em;
+        box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+    }
+
+    form {
+        display: ruby;
+    }
+    .form-left {
+        width: 90%;
+    }
+    label {
+        margin: 0;
+    }
+
+    input[type="date"] {
+        width: 27%
+    }
+    
+    input[type="time"] {
+        width: 12%
+    }
+
+    select {
+        width: 25%;
+    }
+
+    input[type="submit"] {
+        height: fit-content;
+        font-size: 1.1em;
+        margin-top: 2.2em;
+        padding: .7em 0;
+        width: 30%;
+    }
+}
+
+@media (min-width: 1275px) { 
+    .hero-bg section {
+        width: 45%;
+        margin: 0 5%;
+    }
+}
+
+.top {
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.container {
+  width: 500px;
+  clear: both;
+}
+
+.container input {
+  width: 100%;
+  clear: both;
+}
+		body {
+		background-image: url('images/img2.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: right top;
+		background-size: 50% 100%;
+		}
+		form{
+			margin-left: 10%;
+		}
+	</style>
+	<title>Add Products</title>
+	<link rel="stylesheet" href="m1ststyle.css">
+</head>
+<body>
+
+
+
+<form method="POST" action="addproduct.php">
+<div class="container">
+	<h1>You can add Products here.</h1>
+	<p>Enter details to initiate updation of more Products</p>
+
+product id.:<input type="NUMBER" name="product_id"><br><br>
+
+Quantity.:<input type="NUMBER" name="quantity"><br><br>
+
+
+<input type="submit" name="Add Products" value="Add Products">
+</div>
+</form>
+</body>
+</html>

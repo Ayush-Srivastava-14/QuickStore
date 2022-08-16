@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Login Page</title>
+    <link rel="stylesheet" href="reglog.css">
+</head>
+<body style="background-image:url('grocery.jpg'); background-size:cover; ">
+
+    <div  class="hero-bg">
+        <div class="form-container" style="background-color: white;" >
+            <div class="button">
+                <div id="btn"></div>
+                <button type="button" class="toggle" onclick="login()"> <b>Log In</b>  </button>
+                <button type="button" class="toggle" onclick="register()"> <b>Register</b> </button>
+            </div>
+            <!-- <div class="social-icons">
+                <img src="image/gi.jpg" alt="login with google">
+                <img src="image/fi.png" alt="login with facebook">
+            </div> -->
+            <form  action="loginPage.php" method="POST"  id="login"  class="input-group">
+               
+               
+  
+                <label for="email_id">Email Id:</label>
+                <input type="email" name="email_id" placeholder="Enter your email id" required><br>
+                <label for="psw">Password:</label>
+                <input type="password" name="psw" placeholder="Enter Password" required><br>
+                <input type="checkbox" class="checkbox"><span><b>Remember Me</b></span> <br>
+                <button type="submit">Log In</button>
+            </form>
+                
+            <form action="register.php" method="POST" id="register" class="input-group">
+                
+               
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" placeholder="Enter your full name" required><br>
+                
+                <label for="email">Email Id:</label>
+                <input type="email" name="email" placeholder="Enter your email id" required><br>
+                <label for="psw">Password:</label>
+                <input type="password" name="psw" placeholder="Enter Password" required><br>
+                <label for="phone">Phone Number:</label>
+                <input type="number" name="phone" placeholder="Enter Phone Number" required><br>
+                <!-- <label for="age">Age:</label>
+                <input type="number" name="age" placeholder="Enter Age" required><br>
+                <br> -->
+                <button type="submit">Register</button>
+            </form>
+         </div>
+    </div>
+
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+    
+    function register()
+    {
+        x.style.left="-400px";
+        y.style.left="50px";
+        z.style.left="110px";
+    }
+
+    
+    function login()
+    {
+        x.style.left="50px";
+        y.style.left="450px";
+        z.style.left="0px";
+    }
+</script>
+    
+</body>
+</html>
